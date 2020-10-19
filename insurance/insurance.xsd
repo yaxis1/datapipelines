@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema">
+ <xs:element name="insurances">
+     <xs:complexType>
+         <xs:sequence>
+    
+    <xs:element name = "insurance" maxOccurs="unbounded">
+        <xs:complexType > 
+            <xs:sequence >
+                <xs:element name = "contract_id" type = 'xs:integer'/>
+                <xs:element name = 'clientid'>
+                    <xs:simpleType>
+                        <xs:restriction base = "xs:integer" >
+                            <xs:minInclusive value="100"/>
+                            <xs:maxInclusive value="9999"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name = "employeeid" type = 'xs:integer'/>
+                <xs:element name = "begin_contract_date" type = "xs:date"/>
+                <xs:element name = "end_contract_date" type = "xs:date"/>
+                <xs:element name = "insurance_type">
+                    <xs:simpleType >
+                        <xs:restriction base = "xs:string">
+                            <xs:enumeration value="Health insurance"/>
+                            <xs:enumeration value="Car insurance"/>
+                            <xs:enumeration value="Life insurance"/>
+                            <xs:enumeration value="Travel insurance"/>
+                            <xs:enumeration value="Home insurance"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+         </xs:sequence>
+     </xs:complexType>
+ </xs:element>
+
+    
+    
+</xs:schema>
+
+
+
+
+    
+        
+    
+    

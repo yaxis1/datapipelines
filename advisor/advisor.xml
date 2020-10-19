@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href='advisors.xsl'?>
+
+<advisorinfo xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation = "advisors.xsd">
+    <firstname>BALA</firstname>
+    <lastname>Veerabatti</lastname>
+    <employeeid>6</employeeid>
+    <clients_managing>
+        <client_info>
+            <clientid>101</clientid>
+            <insurance_granted>true</insurance_granted>
+            <insurance_type>Health insurance</insurance_type>
+        </client_info>
+        
+        <client_info>
+            <clientid>101</clientid>
+            <insurance_granted>false</insurance_granted>
+            <insurance_type>Car insurance</insurance_type>
+        </client_info>
+        
+        <client_info>
+            <clientid>102</clientid>
+            <insurance_granted>false</insurance_granted>
+            <insurance_type>Car insurance</insurance_type>
+        </client_info>
+        
+        <client_info>
+            <clientid>103</clientid>
+            <insurance_granted>false</insurance_granted>
+            <insurance_type>Life insurance</insurance_type>
+        </client_info>
+       
+    </clients_managing>
+</advisorinfo>
+
+
+
+
+    
+    
+        
+

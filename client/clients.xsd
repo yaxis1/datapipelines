@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs ='http://www.w3.org/2001/XMLSchema'>
+    
+    <xs:element name = "clientinfo">
+     
+      <xs:complexType>
+            <xs:sequence>
+                <xs:element name = "firstname">
+                    <xs:simpleType>
+                        <xs:restriction base = "xs:string" >
+                            <xs:pattern value="([A-Z])+"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name = "lastname" type = "xs:string"/>
+                <xs:element name = "DOB" type = "xs:date"/>
+                <xs:element name = 'age' type = "xs:integer" minOccurs = "0"/>
+                <xs:element name = "insuranceinfo" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name = 'clientid' >
+                                <xs:simpleType>
+                                    <xs:restriction base = "xs:integer" >
+                                        <xs:minInclusive value="100"/>
+                                        <xs:maxInclusive value="9999"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name = "insurance_granted" type="xs:boolean" minOccurs="1"/>
+                            <xs:element name = "insurance_type">
+                                <xs:simpleType>
+                                   <xs:restriction base = "xs:string">
+                                       <xs:enumeration value="Health insurance"/>
+                                       <xs:enumeration value="Car insurance"/>
+                                       <xs:enumeration value="Life insurance"/>
+                                       <xs:enumeration value="Travel insurance"/>
+                                       <xs:enumeration value="Home insurance"/>
+                                   </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                       </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
+

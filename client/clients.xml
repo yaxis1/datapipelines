@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href='clients.xsl'?>
+
+<clientinfo xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation = "clients.xsd">
+
+    <firstname>HARISH</firstname>
+    <lastname>Kowrada</lastname>
+    <DOB>1995-12-13</DOB>
+    <age>25</age>
+    
+    <insuranceinfo>
+        <clientid>101</clientid>
+        <insurance_granted>true</insurance_granted>
+        <insurance_type>Health insurance</insurance_type>
+    </insuranceinfo>
+    
+    <insuranceinfo>
+        <clientid>101</clientid>
+        <insurance_granted>false</insurance_granted>
+        <insurance_type>Car insurance</insurance_type>
+    </insuranceinfo>
+    
+    <insuranceinfo>
+        <clientid>101</clientid>
+        <insurance_granted>true</insurance_granted>
+        <insurance_type>Travel insurance</insurance_type>
+    </insuranceinfo>
+    
+    <insuranceinfo>
+        <clientid>101</clientid>
+        <insurance_granted>false</insurance_granted>
+        <insurance_type>Home insurance</insurance_type>
+    </insuranceinfo>
+    
+    
+</clientinfo>
+
+

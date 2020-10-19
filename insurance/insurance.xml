@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?xml-stylesheet type="text/xsl" href='insurance.xsl'?>
+
+
+<?xmlns xs="http://www.w3.org/2001/XMLSchema"?>
+<insurances xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation = "insurance.xsd">
+    <insurance>
+        <contract_id>007</contract_id>
+        <clientid>101</clientid>
+        <employeeid>6</employeeid>
+        <begin_contract_date>2012-08-12</begin_contract_date>
+        <end_contract_date>2020-10-18</end_contract_date>
+        <insurance_type>Car insurance</insurance_type>
+    </insurance>
+    
+    <insurance>
+        <contract_id>008</contract_id>
+        <clientid>102</clientid>
+        <employeeid>7</employeeid>
+        <begin_contract_date>2010-11-13</begin_contract_date>
+        <end_contract_date>2020-10-18</end_contract_date>
+        <insurance_type>Travel insurance</insurance_type>
+    </insurance>
+    
+    
+    <insurance>
+        
+        <contract_id>009</contract_id>
+        <clientid>101</clientid>
+        <employeeid>8</employeeid>
+        <begin_contract_date>2012-12-13</begin_contract_date>
+        <end_contract_date>2004-11-15</end_contract_date>
+        <insurance_type>Health insurance</insurance_type>
+        
+    </insurance>
+    
+    <insurance>
+        
+        <contract_id>012</contract_id>
+        <clientid>102</clientid>
+        <employeeid>10</employeeid>
+        <begin_contract_date>1995-05-10</begin_contract_date>
+        <end_contract_date>2020-12-13</end_contract_date>
+        <insurance_type>Life insurance</insurance_type>
+        
+    </insurance>
+    
+    <insurance>
+        
+        <contract_id>012</contract_id>
+        <clientid>102</clientid>
+        <employeeid>10</employeeid>
+        <begin_contract_date>1995-04-10</begin_contract_date>
+        <end_contract_date>2020-12-18</end_contract_date>
+        <insurance_type>Home insurance</insurance_type>
+        
+    </insurance>
+    
+    
+</insurances>
